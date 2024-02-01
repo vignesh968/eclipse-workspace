@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main {
+
+	public static void main(String[] args) throws Exception {
+		Scanner scanner=new Scanner(System.in); 
+		schooldao scdata=new schooldao();
+		scdata.display();
+//		while (true) {
+//			int input=scanner.nextInt();
+//			switch (input) {
+//			case 1:
+//				
+//				break;
+//
+//			default:
+//				break;
+//			}
+//		}
+	}
+
+}

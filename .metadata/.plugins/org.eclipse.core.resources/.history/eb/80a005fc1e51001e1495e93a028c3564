@@ -1,0 +1,83 @@
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class studentdao {
+private int st_id ;
+private String st_name;
+private int st_class ;
+//private int roll_no;
+private String address;
+private String sc_name;
+
+
+public void addstudent()throws SQLException{
+	Scanner scanner=new Scanner(System.in);
+	String check="select sc_name from school "; 
+	System.out.println("please Enter your school name: ");
+	 sc_name=scanner.next();
+	 if(sc_name.equals(check)) {
+	 System.out.println("please Enter your student id: ");
+	 st_id=scanner.nextInt();
+	 System.out.println("please Enter  your name: ");
+	 st_name=scanner.next();
+	 System.out.println("please Enter your class: ");
+	 st_class=scanner.nextInt();
+	 System.out.println("please Enter your address: ");
+	 address=scanner.next();
+	 }
+	 else {
+		 System.out.println("please Enter vaild school name!------");
+	 }
+	 
+}
+
+
+public int getSt_id() {
+	return st_id;
+}
+
+
+public void setSt_id(int st_id) {
+	this.st_id = st_id;
+}
+
+
+public String getSt_name() {
+	return st_name;
+}
+
+
+public void setSt_name(String st_name) {
+	this.st_name = st_name;
+}
+
+
+public int getSt_class() {
+	return st_class;
+}
+
+
+public void setSt_class(int st_class) {
+	this.st_class = st_class;
+}
+
+
+public String getAddress() {
+	return address;
+}
+
+
+public void setAddress(String address) {
+	this.address = address;
+}
+
+
+public String getSc_name() {
+	return sc_name;
+}
+
+
+public void setSc_name(String sc_name) {
+	this.sc_name = sc_name;
+}
+}

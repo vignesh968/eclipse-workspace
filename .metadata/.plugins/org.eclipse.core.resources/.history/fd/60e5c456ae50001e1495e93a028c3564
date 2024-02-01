@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main {
+
+	public static void main(String[] args) throws Exception {
+		Scanner scanner=new Scanner(System.in); 
+		schooldao scdata=new schooldao();
+
+		while (true) {
+			System.out.println("please Enter your choise");
+			int input=scanner.nextInt();
+			switch (input) {
+			case 1:
+				scdata.adddatabase();
+				break;
+			case 2:
+				scdata.display();
+			case 3:
+				
+			default:
+				break;
+			}
+		}
+	}
+
+}
